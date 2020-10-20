@@ -1,0 +1,56 @@
+//- index.pug , template copied from pug 
+doctype html
+html
+  head
+    title Dance+
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/logo.png")
+                | Dance+
+            li #[a(href="/") Home]
+            li #[a(href="/") About ]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class info]
+            li #[a(href="/") Contact]
+    section#introsection
+        div| Welcome to Dance+ 
+        div.small| Eat Dance Sleep Repeat 
+    section#missionsection
+        h2 Our missions
+        div.card
+            h3 Dance membership
+             div.card-box
+                div.card-img
+                    img(src="/static/1.jpg")
+                div.card-content
+                    p Join our dance membership at 5000/- month
+        div.card
+            h3 Dance competitions
+             div.card-box
+                div.card-img
+                    img(src="/static/2.jpg")
+                div.card-content
+                    p Exciting dance competitions conducted per month
+        div.card
+            h3 Dance events
+             div.card-box
+                div.card-img
+                    img(src="/static/3.png")
+                div.card-content
+                    p Check our website for daily events 
+    section#sponsorsection
+        h2 Our sponsors
+        div#sponsors
+            img(src= "/static/s1.png", alt= "Sponsor img1", class= "spImage")
+            img(src= "/static/s2.jpg", alt= "Sponsor img2", class= "spImage")
+            img(src= "/static/s3.png", alt= "Sponsor img3", class= "spImage")
+            img(src= "/static/s4.png", alt= "Sponsor img4", class= "spImage")
+           
+    footer#footer
+        | Copyright © 2020 ClubMonkey | All Rights Reserved
+    script
+        include ../static/index.js

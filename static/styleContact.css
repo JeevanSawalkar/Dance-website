@@ -1,0 +1,49 @@
+*{
+    /* removing extra unwanted spaces  */
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+/* putting the body in container because we want it as a page 
+hence  */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 85vh;
+}
+h1{
+    text-align: center;
+    margin: 12px;
+}
+.myForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0px 0px 17px 0px;
+}
+.myInput {
+    width: 668px;
+    text-align: center;
+    border-radius: 34px;
+    margin: 9px 9px 9px 9px;
+    padding: 9px 9px 9px 9px;
+    border: 3px solid black;
+    /* when we click on any input box we get an outline ,
+     in order to remove the outline we use */
+     outline: none;
+}
+.btn {
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 23px;
+    width: 122px;
+    color: white;
+    background-color: #ed2121;
+    padding: 8px;
+    cursor: pointer;
+    outline: none;
+}
